@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1120db47-291c-4f8d-949f-76925ad5feb0}</ProjectGuid>
+    <RootNamespace>PhysicalSimulations</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\lib;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\lib;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\lib;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\lib;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\pw_archiwum\sem8\vcpkg\packages\egl-registry_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\include;..\imgui;..\implot</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3dll.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\pw_archiwum\sem8\vcpkg\packages\egl-registry_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\include;..\imgui;..\implot</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3dll.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\pw_archiwum\sem8\vcpkg\packages\egl-registry_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\include;..\imgui;..\implot</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3dll.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\pw_archiwum\sem8\vcpkg\packages\egl-registry_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glad_x64-windows\include;E:\pw_archiwum\sem8\vcpkg\packages\glfw3_x64-windows\include;..\imgui;..\implot</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glfw3dll.lib;glad.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="flywheel_parameters_window.h" />
+    <ClInclude Include="flywheel_simulation.h" />
+    <ClInclude Include="flywheel_view_window.h" />
+    <ClInclude Include="generic_vector.h" />
+    <ClInclude Include="obstacle.h" />
+    <ClInclude Include="puma_parameters_window.h" />
+    <ClInclude Include="puma_simulation.h" />
+    <ClInclude Include="puma_view_window.h" />
+    <ClInclude Include="shader_library.h" />
+    <ClInclude Include="simple_chain.h" />
+    <ClInclude Include="simple_chain_parameters_window.h" />
+    <ClInclude Include="simple_chain_parameter_space_map.h" />
+    <ClInclude Include="simple_chain_view_window.h" />
+    <ClInclude Include="algebra.h" />
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="animation_parameters_window.h" />
+    <ClInclude Include="animation_view_window.h" />
+    <ClInclude Include="bezier_cube.h" />
+    <ClInclude Include="box.h" />
+    <ClInclude Include="buffer.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="configurable_function.h" />
+    <ClInclude Include="deformed_mesh.h" />
+    <ClInclude Include="dockspace.h" />
+    <ClInclude Include="euler_ode_solver.h" />
+    <ClInclude Include="exception.h" />
+    <ClInclude Include="frame_buffer.h" />
+    <ClInclude Include="fullscreen_window.h" />
+    <ClInclude Include="gl_application.h" />
+    <ClInclude Include="imgui_guards.h" />
+    <ClInclude Include="jelly_parameters_window.h" />
+    <ClInclude Include="jelly_simulation.h" />
+    <ClInclude Include="jelly_view_window.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="mesh_generator.h" />
+    <ClInclude Include="ode.h" />
+    <ClInclude Include="ode_solver.h" />
+    <ClInclude Include="plot_window.h" />
+    <ClInclude Include="quaternion.h" />
+    <ClInclude Include="runge_kutta_4_ode_solver.h" />
+    <ClInclude Include="shader.h" />
+    <ClInclude Include="spinning_top_parameters_window.h" />
+    <ClInclude Include="spinning_top_simulation.h" />
+    <ClInclude Include="spinning_top_view_window.h" />
+    <ClInclude Include="spring_parameters_window.h" />
+    <ClInclude Include="spring_simulation.h" />
+    <ClInclude Include="spring_view_window.h" />
+    <ClInclude Include="state_listener.h" />
+    <ClInclude Include="task.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="vertex_array.h" />
+    <ClInclude Include="window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\imgui\imgui.cpp" />
+    <ClCompile Include="..\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\implot\implot.cpp" />
+    <ClCompile Include="..\implot\implot_demo.cpp" />
+    <ClCompile Include="..\implot\implot_items.cpp" />
+    <ClCompile Include="algebra.cpp" />
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="animation_parameters_window.cpp" />
+    <ClCompile Include="animation_view_window.cpp" />
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="flywheel_parameters_window.cpp" />
+    <ClCompile Include="flywheel_simulation.cpp" />
+    <ClCompile Include="flywheel_view_window.cpp" />
+    <ClCompile Include="fullscreen_window.cpp" />
+    <ClCompile Include="gl_application.cpp" />
+    <ClCompile Include="jelly_parameters_window.cpp" />
+    <ClCompile Include="jelly_simulation.cpp" />
+    <ClCompile Include="jelly_view_window.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mesh_generator.cpp" />
+    <ClCompile Include="plot_window.cpp" />
+    <ClCompile Include="puma_parameters_window.cpp" />
+    <ClCompile Include="puma_simulation.cpp" />
+    <ClCompile Include="puma_view_window.cpp" />
+    <ClCompile Include="shader.cpp" />
+    <ClCompile Include="shader_library.cpp" />
+    <ClCompile Include="simple_chain.cpp" />
+    <ClCompile Include="simple_chain_parameters_window.cpp" />
+    <ClCompile Include="simple_chain_parameter_space_map.cpp" />
+    <ClCompile Include="simple_chain_view_window.cpp" />
+    <ClCompile Include="spinning_top_parameters_window.cpp" />
+    <ClCompile Include="spinning_top_simulation.cpp" />
+    <ClCompile Include="spinning_top_view_window.cpp" />
+    <ClCompile Include="spring_parameters_window.cpp" />
+    <ClCompile Include="spring_simulation.cpp" />
+    <ClCompile Include="spring_view_window.cpp" />
+    <ClCompile Include="configurable_function.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="glfw3.dll">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="simple_vertex_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="simple_fragment_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="axes_fragment_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="axes_vertex_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="phong_fragment_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="phong_vertex_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="models\duck.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="bezier_patch_tess_eval_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="dummy_vertex_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="patch_tess_control_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="phong_deformed_vertex_shader.glsl" />
+    <CopyFileToFolders Include="quad_vertex_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="scpm_fragment_shader.glsl">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

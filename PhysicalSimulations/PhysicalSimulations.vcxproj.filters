@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{8848d879-295a-4dc1-8976-e71ab2424f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\ode">
+      <UniqueIdentifier>{64be54be-44b7-4ee0-867c-44ef20abc525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations">
+      <UniqueIdentifier>{56eed544-7b2f-4558-900c-6b3e7ca1846d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="implot">
+      <UniqueIdentifier>{fb3f0a1a-36f6-4b4e-8205-cdb8f4dc730e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\spring">
+      <UniqueIdentifier>{670e8df8-9b56-4482-9eea-849768baa32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations">
+      <UniqueIdentifier>{4b5efd4b-b4b1-490d-bea2-55411d8f932d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\spring">
+      <UniqueIdentifier>{8f9ec6f0-a0a5-487a-a791-5386333dec08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\spinning_top">
+      <UniqueIdentifier>{5f5a4a47-8d12-4767-b8e5-8ed0306e1fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\spinning_top">
+      <UniqueIdentifier>{046d40b4-6729-4a1a-bd95-04cfb2f0ce5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\drawing">
+      <UniqueIdentifier>{3c5e527b-451f-4d03-9d48-0df3fa627ddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\drawing">
+      <UniqueIdentifier>{32aca288-205b-4424-8dc9-83b9ffd3c322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\animation_interpolation">
+      <UniqueIdentifier>{b4f81f97-b2c4-430b-a0eb-2123fa5827a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\animation_interpolation">
+      <UniqueIdentifier>{4193cb98-0665-412d-a6e0-239a680d0170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\shaders">
+      <UniqueIdentifier>{859959cf-a0ed-444a-a31a-35b1a957f260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\models">
+      <UniqueIdentifier>{6731df7a-2703-495f-8df7-a6c361761d11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\jelly">
+      <UniqueIdentifier>{16640c9b-389d-490f-a35e-09558f0f6d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\jelly">
+      <UniqueIdentifier>{00690fd5-285a-460b-bcd0-ed9ae9b06914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\simple_kinematic_chain">
+      <UniqueIdentifier>{f41a274f-249d-4116-9de7-71060adaac66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\simple_kinematic_chain">
+      <UniqueIdentifier>{0ab31090-4220-4da2-ae42-ca4c4c04631f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\puma">
+      <UniqueIdentifier>{24fbf2d5-4b70-4a59-9fdf-c9dcdcf55b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\puma">
+      <UniqueIdentifier>{cf299d0e-4d9b-45dc-b595-089b30dcccf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\simulations\flywheel">
+      <UniqueIdentifier>{b6c90db9-dcb2-4e34-8704-fdd5e65bfbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\simulations\flywheel">
+      <UniqueIdentifier>{532d82c8-74a9-4bc4-9ba7-547ad6382784}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="window.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="gl_application.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="ode.h">
+      <Filter>Pliki nagłówkowe\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="ode_solver.h">
+      <Filter>Pliki nagłówkowe\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="task.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="plot_window.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="dockspace.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="fullscreen_window.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="spring_simulation.h">
+      <Filter>Pliki nagłówkowe\simulations\spring</Filter>
+    </ClInclude>
+    <ClInclude Include="spring_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\spring</Filter>
+    </ClInclude>
+    <ClInclude Include="spring_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\spring</Filter>
+    </ClInclude>
+    <ClInclude Include="configurable_function.h">
+      <Filter>Pliki nagłówkowe\simulations</Filter>
+    </ClInclude>
+    <ClInclude Include="euler_ode_solver.h">
+      <Filter>Pliki nagłówkowe\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="runge_kutta_4_ode_solver.h">
+      <Filter>Pliki nagłówkowe\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="spinning_top_simulation.h">
+      <Filter>Pliki nagłówkowe\simulations\spinning_top</Filter>
+    </ClInclude>
+    <ClInclude Include="quaternion.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="spinning_top_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\spinning_top</Filter>
+    </ClInclude>
+    <ClInclude Include="spinning_top_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\spinning_top</Filter>
+    </ClInclude>
+    <ClInclude Include="buffer.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="frame_buffer.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex_array.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="algebra.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="state_listener.h">
+      <Filter>Pliki nagłówkowe\simulations</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\animation_interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh_generator.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Pliki nagłówkowe\simulations\animation_interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\animation_interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="jelly_simulation.h">
+      <Filter>Pliki nagłówkowe\simulations\jelly</Filter>
+    </ClInclude>
+    <ClInclude Include="bezier_cube.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="jelly_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\jelly</Filter>
+    </ClInclude>
+    <ClInclude Include="jelly_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\jelly</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_guards.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="box.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="deformed_mesh.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_chain_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\simple_kinematic_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_chain.h">
+      <Filter>Pliki nagłówkowe\simulations\simple_kinematic_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="obstacle.h">
+      <Filter>Pliki nagłówkowe\simulations\simple_kinematic_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_chain_parameter_space_map.h">
+      <Filter>Pliki nagłówkowe\simulations\simple_kinematic_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_chain_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\simple_kinematic_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="puma_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\puma</Filter>
+    </ClInclude>
+    <ClInclude Include="puma_simulation.h">
+      <Filter>Pliki nagłówkowe\simulations\puma</Filter>
+    </ClInclude>
+    <ClInclude Include="generic_vector.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="puma_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\puma</Filter>
+    </ClInclude>
+    <ClInclude Include="flywheel_simulation.h">
+      <Filter>Pliki nagłówkowe\simulations\flywheel</Filter>
+    </ClInclude>
+    <ClInclude Include="flywheel_view_window.h">
+      <Filter>Pliki nagłówkowe\simulations\flywheel</Filter>
+    </ClInclude>
+    <ClInclude Include="flywheel_parameters_window.h">
+      <Filter>Pliki nagłówkowe\simulations\flywheel</Filter>
+    </ClInclude>
+    <ClInclude Include="shader_library.h">
+      <Filter>Pliki nagłówkowe\drawing</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_impl_opengl3.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="gl_application.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="plot_window.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\implot\implot.cpp">
+      <Filter>implot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\implot\implot_demo.cpp">
+      <Filter>implot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\implot\implot_items.cpp">
+      <Filter>implot</Filter>
+    </ClCompile>
+    <ClCompile Include="fullscreen_window.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="spring_simulation.cpp">
+      <Filter>Pliki źródłowe\simulations\spring</Filter>
+    </ClCompile>
+    <ClCompile Include="spring_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\spring</Filter>
+    </ClCompile>
+    <ClCompile Include="spring_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\spring</Filter>
+    </ClCompile>
+    <ClCompile Include="configurable_function.cpp">
+      <Filter>Pliki źródłowe\simulations</Filter>
+    </ClCompile>
+    <ClCompile Include="spinning_top_simulation.cpp">
+      <Filter>Pliki źródłowe\simulations\spinning_top</Filter>
+    </ClCompile>
+    <ClCompile Include="spinning_top_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\spinning_top</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Pliki źródłowe\drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="algebra.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Pliki źródłowe\drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="spinning_top_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\spinning_top</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\animation_interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="mesh_generator.cpp">
+      <Filter>Pliki źródłowe\drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Pliki źródłowe\simulations\animation_interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="animation_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\animation_interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="jelly_simulation.cpp">
+      <Filter>Pliki źródłowe\simulations\jelly</Filter>
+    </ClCompile>
+    <ClCompile Include="jelly_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\jelly</Filter>
+    </ClCompile>
+    <ClCompile Include="jelly_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\jelly</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_chain_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\simple_kinematic_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_chain_parameter_space_map.cpp">
+      <Filter>Pliki źródłowe\simulations\simple_kinematic_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_chain_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\simple_kinematic_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="simple_chain.cpp">
+      <Filter>Pliki źródłowe\simulations\simple_kinematic_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="puma_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\puma</Filter>
+    </ClCompile>
+    <ClCompile Include="puma_simulation.cpp">
+      <Filter>Pliki źródłowe\simulations\puma</Filter>
+    </ClCompile>
+    <ClCompile Include="puma_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\puma</Filter>
+    </ClCompile>
+    <ClCompile Include="flywheel_simulation.cpp">
+      <Filter>Pliki źródłowe\simulations\flywheel</Filter>
+    </ClCompile>
+    <ClCompile Include="flywheel_view_window.cpp">
+      <Filter>Pliki źródłowe\simulations\flywheel</Filter>
+    </ClCompile>
+    <ClCompile Include="flywheel_parameters_window.cpp">
+      <Filter>Pliki źródłowe\simulations\flywheel</Filter>
+    </ClCompile>
+    <ClCompile Include="shader_library.cpp">
+      <Filter>Pliki źródłowe\drawing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="glfw3.dll" />
+    <CopyFileToFolders Include="axes_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="axes_fragment_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="phong_fragment_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="phong_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="simple_fragment_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="simple_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="models\duck.txt">
+      <Filter>Pliki zasobów\models</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="dummy_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="patch_tess_control_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="bezier_patch_tess_eval_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="scpm_fragment_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="quad_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="phong_deformed_vertex_shader.glsl">
+      <Filter>Pliki zasobów\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
